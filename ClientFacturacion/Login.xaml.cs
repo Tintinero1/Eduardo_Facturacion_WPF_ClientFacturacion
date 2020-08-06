@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ClientFacturacion.ServiceReference1;
 
 namespace ClientFacturacion
 {
@@ -19,14 +20,24 @@ namespace ClientFacturacion
     /// </summary>
     public partial class Login : Window
     {
+        FacturacionMethodsClient client;
         public Login()
         {
             InitializeComponent();
+            //Step 1: Create an instance of the WCF proxy.
+            client = new FacturacionMethodsClient();
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            bool result = false;
+            result = client.ValidateCredentials(this.txtUsername.Text, this.txtPassword.Password);
 
+            System.Diagnostics.Debug.WriteLine("\n----- El usuario es valido?: " +  result + " -----");
+
+            var Page2 = new MainWindow(); //create your new form.
+            Page2.Show(); //show the new form.
+            this.Close(); //only if you want to close the current form.
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
