@@ -7,7 +7,7 @@
         xmlns:viewmodels="clr-namespace:ClientFacturacion.ViewModels"
         xmlns:views="clr-namespace:ClientFacturacion.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="573" Width="1386" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <DataTemplate x:Name="InicioTemplate" DataType="{x:Type viewmodels:Inicio}">
             <views:Inicio DataContext="{Binding}"/>

@@ -24,7 +24,6 @@
   <Metadata>
     <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="0c698a38-6e4b-4b71-9f7e-74b128dd6580" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FacturacionServiceLib/Service1/mex" />
     <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="cf96185f-303d-418d-9f75-f2ee50f88998" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FacturacionServiceLib/Service1/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="bbe88d2b-575a-43ed-a66d-7263c5275ee8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FacturacionServiceLib/Service1/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
